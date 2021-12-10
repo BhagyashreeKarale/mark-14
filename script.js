@@ -20,14 +20,12 @@ function calculateProfitAndLoss(initial, quantity, current) {
   if (initial > current) {
     var loss = (initial - current) * quantity;
     var lossPercentage = (loss / initial) * 100;
-    outputdiv.style.BackgroundColor="red";
     showOutput(
       `${loss} RS(${lossPercentage}%) loss `
     );
   } else if (current > initial) {
     var profit = (current - initial) * quantity;
     var profitPercentage = (profit / initial) * 100;
-    outputdiv.style.BackgroundColor="green";
     showOutput(
       `${profit} RS(${profitPercentage}%) profit `
     );
